@@ -73,7 +73,7 @@ export default async function Jero() {
 <div className="mb-8 flex flex-wrap justify-between md:mb-16">
         <div className="mb-6 flex flex-col justify-center w-full lg:w-2/3 lg:pb-24 lg:pt-48 lg:pr-8">
           <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:mb-8 md:text-6xl">
-            Discover Your Style, Define Your Look!
+            Discover Your Style,<br /> Define Your Look!
           </h1>
           <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">
             Explore curated fashion for the trendsetter in you. Elevate your style with our exclusive collection.
@@ -147,27 +147,27 @@ export default async function Jero() {
 </div> */}
 
 <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
-  <div className="flex h-12 w-64 divide-x overflow-hidden rounded-lg border">
-    <Link
-      href="/Men"
-      className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
-    >
-      Men
-    </Link>
-    <Link
-      href="/Women"
-      className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
-    >
-      Women
-    </Link>
-    <Link
-      href="/Teens"
-      className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
-    >
-      Teens
-    </Link>
-  </div>
-</div>
+        <div className="flex h-12 w-64 divide-x overflow-hidden rounded-lg border">
+         <Link
+            href="/Men"
+            className="flex w-1/3 bg-primary items-center justify-center text-white transition duration-100 hover:bg-gray-100 hover:text-primary active:bg-gray-200 active:text-primary"
+          >
+            Men
+          </Link>
+          <Link
+            href="/Women"
+            className="flex w-1/3 bg-primary items-center justify-center text-white transition duration-100 hover:bg-gray-100 hover:text-primary active:bg-gray-200 active:text-primary"
+          >
+            Women
+          </Link>
+          <Link
+            href="/Kids"
+            className="flex w-1/3 bg-primary items-center justify-center text-white transition duration-100 hover:bg-gray-100 hover:text-primary active:bg-gray-200 active:text-primary"
+          >
+            Kids
+          </Link>
+        </div>
+        </div>
 </section> 
   
 
