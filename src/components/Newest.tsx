@@ -6,15 +6,16 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 async function getData() {
-  const query = ` *[_type == 'product'][0...6] | order(_createdAt desc){
-             _id,
-              price,
-             name,
-              "slug":slug.current,
-             "categoryName":category->name,
-            "imageUrl":images[0].asset->url
-              
-          }`;
+  const query = ` *[_type == 'product'][0...6] | order(_createdAt desc)
+  {
+    _id,
+      price,
+      name,
+      "slug":slug.current,
+      "categoryName":category->name,
+      "imageUrl":images[0].asset->url
+      
+  }`;
 
   const data = await client.fetch(query);
 
@@ -41,12 +42,12 @@ async function Newest() {
 
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {data.map((product) => (
-            <div key={product._id} className="group relative">
+            <div key={product._id} className="group relative text-bold">
               <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-80">
                 <Image
                   src={product.imageUrl}
                   alt="Product image"
-                  className="w-full h-full object-cover object-center lg:h-full lg:w-full"
+                  className="w-full h-full object-cover object-center lg:h-full lg:w-full "
                   width={300}
                   height={300}
                 />

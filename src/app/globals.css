@@ -4,6 +4,8 @@
  
 body{
   overflow-x: hidden !important;
+  touch-action: pan-y pinch-zoom; /* Disable pinch-zoom */
+  /* Disable overscroll behavior */
 }
 @layer base {
   :root {
