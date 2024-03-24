@@ -33,7 +33,7 @@ Explore curated fashion for the trendsetter in you. Elevate your style with our 
             <Image
               src={urlFor(data.image1).url()}
               alt="Great Photo"
-              className="h-full object-cover object-center ml-60 "
+              className="h-full object-cover object-center ml-60 md:ml-60 sm:ml-10 "
               priority
               width={500}
               height={200}

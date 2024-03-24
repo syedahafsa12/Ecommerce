@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 async function getData() {
-  const query = ` *[_type == 'product'][0...5] | order(_createdAt desc){
+  const query = ` *[_type == 'product'][0...6] | order(_createdAt desc){
              _id,
               price,
              name,
