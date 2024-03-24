@@ -33,7 +33,8 @@ export default function ShoppingCartModal() {
     }
   }
   return (
-    <Sheet open={shouldDisplayCart} onOpenChange={() => handleCartClick()}>
+    
+     <Sheet open={shouldDisplayCart} onOpenChange={() => handleCartClick()} >
       <SheetContent className="sm:max-w-lg w-[90vw]">
         <SheetHeader>
           <SheetTitle>Shopping Cart</SheetTitle>
@@ -116,7 +117,8 @@ export default function ShoppingCartModal() {
               </p>
             </div>
           </div>
-        </div>
+        </div> 
+        
       </SheetContent>
     </Sheet>
   );

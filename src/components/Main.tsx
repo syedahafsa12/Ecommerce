@@ -161,7 +161,7 @@ export default async function Jero() {
             Women
           </Link>
           <Link
-            href="/Kids"
+            href="/kids"
             className="flex w-1/3 bg-primary items-center justify-center text-white transition duration-100 hover:bg-gray-100 hover:text-primary active:bg-gray-200 active:text-primary"
           >
             Kids

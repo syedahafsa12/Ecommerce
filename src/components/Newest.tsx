@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 async function getData() {
-  const query = ` *[_type == 'product'][0...6] | order(_createdAt desc)
+  const query = ` *[_type == 'product'][0...9] | order(_createdAt desc)
   {
     _id,
       price,
@@ -32,12 +32,12 @@ async function Newest() {
             <h2 className="text-2xl font-bold tracking-tight text-gray-900">
               Our Newest products
             </h2>
-            <Link className="text-primary flex items-center gap-x-1" href="/all">
+            {/* <Link className="text-primary flex items-center gap-x-1" href="/all">
             See All{" "}
             <span>
               <ArrowRight />
             </span>
-          </Link>
+          </Link> */}
           </div>
 
           {/* <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">

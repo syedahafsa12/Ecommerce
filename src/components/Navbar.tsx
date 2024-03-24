@@ -17,7 +17,7 @@ import { Button } from './ui/button';
     
     export default function Navbar() {
       const pathname = usePathname();
-    //   const { handleCartClick } = useShoppingCart();
+      const { handleCartClick } = useShoppingCart();
 
   return (
     <main>
@@ -54,7 +54,7 @@ import { Button } from './ui/button';
     
             <div className="flex divide-x border-r sm:border-l">
               <Button
-                  
+                  onClick={() => handleCartClick()}
                 // onClick={() => handleCartClick()}
             className="flex flex-col gap-y-1.5 h-10 w-10 sm:h-10 sm:w-10 md:h-10 md:w-10 rounded-5">
              
