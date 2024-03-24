@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
